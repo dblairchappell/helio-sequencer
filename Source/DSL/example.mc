@@ -1,93 +1,116 @@
 
-track "Piano":
+track Piano
 
     instrument: 0
     channel: 1
 
-    part verse:
-        bar 1: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: on
+    section Verse
+        note: {e4 g4} c4 {e4 g4} c4
+        velo: {82 79} 78 {82 79} 78
+        sust: on . . .       
 
-        bar 2: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: .  .  . [ . off]
+        note: {e4 g4} c4 {e4 g4} c4  
+        velo: {82 79} 78 {82 79} 78
+        sust: . . . [ . off]      
 
-        bar 3: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: on
+        note: {e4 g4} c4 {e4 g4} c4  
+        velo: {82 79} 78 {82 79} 78
+        sust: on . . .       
 
-        bar 4: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: .  .  . [ . off]
+        note: {e4 g4} c4 {e4 g4} c4
+        velo: {82 79} 78 {82 79} 78
+        sust: . . . [ . off]       
+    end
 
-    part bridge:
-        bar 1: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: on
+    section Bridge
 
-        bar 2: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: .  .  . [ . off]
+        note: {e4 g4} c4 {e4 g4} c4 
+        velo: {82 79} 78 {82 79} 78
+        sust: on
 
-        bar 3: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: on
+        note: {e4 g4} c4 {e4 g4} c4 
+        velo: {82 79} 78 {82 79} 78
+        sust: . . . [ . off]
 
-        bar 4: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: .  .  . [ . off]
+        note: {e4 g4} c4 {e4 g4} c4 
+        velo: 82 79 78 82 79 78
+        sust: on
 
-    part chorus:
-        bar 1: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: on
+        note: {e4 g4} c4 {e4 g4} c4 
+        velo: {82 79} 78 {82 79} 78
+        sust: . . . [ . off]
+    end
+    
+    section Chorus
+        note: {e4 g4} c4 {e4 g4} c4 
+        velo: {82 79} 78 {82 79} 78
+        sust: on
 
-        bar 2: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: .  .  . [ . off]
+        note: {e4 g4} c4 {e4 g4} c4 
+        velo: {82 79} 78 {82 79} 78
+        sust: . . . [ . off]
 
-        bar 3: 
-            notes: e4g4  c4 e4g4  c4 
-            veloc: 82 79 78 82 79 78
-            susta: on
+        note: {e4 g4} c4 {e4 g4} c4 
+        velo: {82 79} 78 {82 79} 78
+        sust: on
 
-        bar 4: 
-            notes: e4g4  c4 e4g4  c4
-            veloc: 82 79 78 82 79 78
-            susta: .  .  . [ . off]
+        note: {e4 g4} c4 {e4 g4} c4
+        velo: {82 79} 78 {82 7}9 78
+        sust: . . . [ . off]
+    end
+end
 
-track "Bass":
+track Bass
 
     instrument: 0
     channel: 33
 
-    part verse: 
-        notes: c4 | c4 | c4 | c4
-        veloc: 78 | 87 | 86 | 88
+    section Verse
+        note: c4
+        velo: 78
 
-    part bridge: 
-        notes: c4 | c4 | c4 | c4
-        veloc: 78 | 87 | 86 | 88
+        note: c4
+        velo: 80
 
-    part chorus: 
-        notes: c4 | c4 | c4 | c4
-        veloc: 78 | 87 | 86 | 88
+        note: c4
+        velo: 82
 
-arrangement:
+        note: c4
+        velo: 76
+    end
 
-    "Piano": verse verse bridge chorus verse bridge chorus chorus
-    "Bass": verse verse bridge chorus verse bridge chorus chorus
+    section Verse
+        note: c4
+        velo: 78
 
+        note: c4
+        velo: 80
+
+        note: c4
+        velo: 82
+
+        note: c4
+        velo: 76
+    end
+    
+    section Verse
+        note: c4
+        velo: 78
+
+        note: c4
+        velo: 80
+
+        note: c4
+        velo: 82
+
+        note: c4
+        velo: 76
+    end
+end
+
+arrangement
+    Piano: Verse Verse Bridge Chorus Verse Bridge Chorus Chorus
+    Bass: Verse Verse Bridge Chorus Verse Bridge Chorus Chorus
+end
 
 
